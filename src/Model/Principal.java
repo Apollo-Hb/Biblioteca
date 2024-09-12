@@ -27,15 +27,14 @@ public class Principal {
         emprestimo.setLivro(livro);
         emprestimo.setUsuario(usuario);
 
-        int anoEmprestimo = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano do empréstimo:"));
-        int mesEmprestimo = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês do empréstimo:"));
-        int diaEmprestimo = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia do empréstimo:"));
-        emprestimo.setDataEmprestimo(anoEmprestimo, mesEmprestimo, diaEmprestimo);
+        Integer.parseInt(JOptionPane.showInputDialog("Digite o ano do empréstimo:"));
+        Integer.parseInt(JOptionPane.showInputDialog("Digite o mês do empréstimo:"));
+        Integer.parseInt(JOptionPane.showInputDialog("Digite o dia do empréstimo:"));
 
-        int anoDevolucao = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano da devolução:"));
-        int mesDevolucao = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês da devolução:"));
-        int diaDevolucao = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia da devolução:"));
-        emprestimo.setDataPrevistaDevolucao(anoDevolucao, mesDevolucao, diaDevolucao);
+
+        Integer.parseInt(JOptionPane.showInputDialog("Digite o ano da devolução:"));
+        Integer.parseInt(JOptionPane.showInputDialog("Digite o mês da devolução:"));
+        Integer.parseInt(JOptionPane.showInputDialog("Digite o dia da devolução:"));
 
         System.out.println("Livro:");
         System.out.println("ID: " + livro.getId());
