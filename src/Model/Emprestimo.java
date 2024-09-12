@@ -10,13 +10,11 @@ public class Emprestimo {
     private Calendar dataEmprestimo;
     private Calendar dataPrevistaDevolucao;
 
-    // Construtor vazio
     public Emprestimo() {
         this.dataEmprestimo = Calendar.getInstance();
         this.dataPrevistaDevolucao = Calendar.getInstance();
     }
 
-    // Construtor com todos os atributos
     public Emprestimo(int id, Livro livro, Usuario usuario, Calendar dataEmprestimo, Calendar dataPrevistaDevolucao) {
         this.id = id;
         this.livro = livro;
@@ -56,7 +54,7 @@ public class Emprestimo {
 
     public void setDataEmprestimo(int ano, int mes, int dia) {
         this.dataEmprestimo = Calendar.getInstance();
-        this.dataEmprestimo.set(ano, mes - 1, dia); // Meses em Calendar são baseados em zero
+        this.dataEmprestimo.set(ano, mes - 1, dia);
     }
 
     public Calendar getDataPrevistaDevolucao() {
@@ -65,7 +63,7 @@ public class Emprestimo {
 
     public void setDataPrevistaDevolucao(int ano, int mes, int dia) {
         this.dataPrevistaDevolucao = Calendar.getInstance();
-        this.dataPrevistaDevolucao.set(ano, mes - 1, dia); // Meses em Calendar são baseados em zero
+        this.dataPrevistaDevolucao.set(ano, mes - 1, dia);
     }
 
     @Override

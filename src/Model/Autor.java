@@ -3,9 +3,6 @@ package Model;
 public class Autor {
     private int id;
     private String nome;
-    // construtor vazio
-    // construtor comm todos os atributos
-    // getter e setter
 
     public Autor() {
     }

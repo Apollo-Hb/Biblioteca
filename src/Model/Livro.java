@@ -6,9 +6,6 @@ public class Livro {
     private String isbn;
     private String autor;
     private int quantidade;
-    // construtor vazio
-    // construtor comm todos os atributos
-    // getter e setter
 
     public Livro() {
     }

@@ -4,9 +4,6 @@ public class Usuario {
     private int id;
     private String nome;
     private String matricula;
-    // construtor vazio
-    // construtor comm todos os atributos
-    // getter e setter
 
     public Usuario() {
     }
